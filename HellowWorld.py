@@ -15,7 +15,7 @@ default_args = {
 }
 
 
-dag = DAG('lava6_34', default_args=default_args)
+dag = DAG('lava6_34', default_args=default_args ,schedule_interval="0 0/1 * 1/1 * ? *")
 
 # t1, t2, t3 and t4 are examples of tasks created using operators
 
